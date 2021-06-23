@@ -9,7 +9,7 @@ const Avatar = ({ count, complete }) => {
                 {complete.complete ?
                     'Good Job!! you found our way out!'
                     :
-                    count.count == 0 ?
+                    count.count === 0 ?
                         `Solve the Galaxy Maze by clicking your way out!
                     \n use the mouse to guide our Gundam to the exit`
                         : `Good Job! you've done ${count.count} moves!`

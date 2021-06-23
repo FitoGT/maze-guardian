@@ -8,7 +8,6 @@ const countReducer = (state = INITIAL_STATE, action) => {
                 ...state,
                 count:action.payload
             }
-            break;
     
         default:
             return state;

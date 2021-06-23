@@ -14,10 +14,11 @@ const Field = ({ setCount,setComplete }) => {
 
         config.map((conf, key) => {
             cellArr.push(conf)
+            return true
         })
         setBoard(cellArr)
         setCount(move)
-    }, [move])
+    }, [move,setCount])
 
     const moveElement = (key) => {
         let newBoard = [...board]
@@ -32,7 +33,7 @@ const Field = ({ setCount,setComplete }) => {
             fetch('http://www.mocky.io/v2/5df38f523100006d00b58560')
             .then(response => response.json())
             .then(data => {
-                if(data.status=="OK"){
+                if(data.status==="OK"){
                     setComplete(true)
                 }
             });
@@ -41,7 +42,7 @@ const Field = ({ setCount,setComplete }) => {
     }
     const findPreviousSpace = (key) => {
         let newBoard = [...board]
-        let filtered = newBoard.filter((b, bKey) => bKey != key && b.className == 'cell-active')
+        let filtered = newBoard.filter((b, bKey) => bKey !== key && b.className === 'cell-active')
         filtered.map(f => f.className = 'cell-space')
 
     }

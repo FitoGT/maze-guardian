@@ -8,7 +8,6 @@ const completeReducer = (state = INITIAL_STATE, action) => {
                 ...state,
                 complete:action.payload
             }
-            break;
     
         default:
             return state;
