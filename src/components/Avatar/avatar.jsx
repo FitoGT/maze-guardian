@@ -3,7 +3,7 @@ import './avatar.css'
 import { connect } from 'react-redux'
 const Avatar = ({ count, complete }) => {
     return (
-        <div className="avatar">
+        <div data-testid="avatar" className="avatar">
             <div className="dialog-1">
                 <div className="left-point"></div>
                 {complete.complete ?

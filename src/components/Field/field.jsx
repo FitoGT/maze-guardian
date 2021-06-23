@@ -49,7 +49,7 @@ const Field = ({ setCount,setComplete }) => {
 
    
     return (
-        <div className="container">
+        <div data-testid="field"  className="container">
             {board.map((b, key) => <Cell key={key} tabIndex={key} {...b} onClick={() => moveElement(key)} />)}
         </div>
     )
