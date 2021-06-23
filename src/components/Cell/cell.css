@@ -18,8 +18,11 @@
 .cell-active{
     width: 75px;
     height: 35px;
-    background: red;
+    background: white;
     display: block;
     float: left;
     border: solid white 1px;
+    background-image: url('../../assets/icon.png');
+    background-size:  cover;
+    background-position: center;
   }
