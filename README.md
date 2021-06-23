@@ -10,7 +10,7 @@ clone this repo to your local directory.
 `git clone https://github.com/FitoGT/maze-guardian.git`
 
 navigate to directory
-`cd to maze-guardian`
+`cd maze-guardian`
 
 #### run
 
