@@ -1,0 +1,25 @@
+.cell-wall{
+  width: 75px;
+  height: 35px;
+  background: black;
+  border: solid white 1px;
+  display: block;
+  float: left;
+}
+.cell-space{
+    width: 75px;
+    height: 35px;
+    background: white;
+    display: block;
+    float: left;
+    border: solid white 1px;
+  }
+
+.cell-active{
+    width: 75px;
+    height: 35px;
+    background: red;
+    display: block;
+    float: left;
+    border: solid white 1px;
+  }
