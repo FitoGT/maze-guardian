@@ -17,6 +17,10 @@ navigate to directory
 `npm install`
 to install the dependencies
 
+#### run test
+
+`npm test`
+
 #### run
 
 `npm start`
