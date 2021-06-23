@@ -1,13 +1,14 @@
 import React from 'react'
 import Field from './components/Field/field';
 import Avatar from './components/Avatar/avatar'
-
+import './App.css'
 const  App=()=> {
 
   return (
-    <div >
-      <Field/>
+    <div className="wrapper">
       <Avatar/>
+
+      <Field/>
 
     </div>
   );

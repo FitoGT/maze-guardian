@@ -1,5 +1,8 @@
 .container {
     margin: 0 auto;
     width: 935px;
-    margin-top: 95px;
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin-top: 200px;
 }

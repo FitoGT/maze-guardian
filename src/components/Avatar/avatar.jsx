@@ -6,7 +6,10 @@ const Avatar = ({ count }) => {
         <div className="avatar">
             <div className="dialog-1">
                 <div className="left-point"></div>
-                {`Good Job! you've done ${count.count} moves!`}
+                {count.count == 0 ?
+                `Solve the Galaxy Maze by clicking your way out!
+                \n use the mouse to guide our Gundam to the exit`
+                : `Good Job! you've done ${count.count} moves!`}
             </div>
         </div>
     )

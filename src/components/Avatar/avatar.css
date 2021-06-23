@@ -3,8 +3,10 @@
     width: 500px;
     height: 500px;
     background-repeat: no-repeat;
-    background-size: 300px 260px;
-    position: relative;
+    background-size: 245px 260px;
+    position: absolute;
+    right: 0;
+    top: 65px;
 }
 .dialog-1{
     margin-top: -55px;
@@ -25,7 +27,7 @@
   border-right: 2vh solid transparent;
   border-top: 10vh solid white;
   position: absolute;
-  top: 45%;
+  top: 60%;
   left: -10%;
   transform: rotate(60deg);
 }

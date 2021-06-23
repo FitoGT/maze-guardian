@@ -16,7 +16,7 @@ const Field = ({ setCount }) => {
         })
         setBoard(cellArr)
         setCount(move)
-    }, [])
+    }, [move])
 
     const moveElement = (key) => {
         let newBoard = [...board]
