@@ -4,8 +4,9 @@ import './field.css'
 import { config } from './configField'
 import { connect } from 'react-redux'
 import { setCount } from '../../redux/count/count.actions'
+import { setComplete } from '../../redux/complete/complete.actions'
 
-const Field = ({ setCount }) => {
+const Field = ({ setCount,setComplete }) => {
     const [board, setBoard] = useState([])
     const [move, setMove] = useState(0)
     useEffect(() => {
@@ -27,6 +28,15 @@ const Field = ({ setCount }) => {
             setMove(move + 1)
             setCount(move)
         }
+        if(newBoard[key].exit ){
+            fetch('http://www.mocky.io/v2/5df38f523100006d00b58560')
+            .then(response => response.json())
+            .then(data => {
+                if(data.status=="OK"){
+                    setComplete(true)
+                }
+            });
+        }
 
     }
     const findPreviousSpace = (key) => {
@@ -45,6 +55,7 @@ const Field = ({ setCount }) => {
 }
 
 const mapDispatchToProps = dispatch => ({
-    setCount: count => dispatch(setCount(count))
+    setCount: count => dispatch(setCount(count)),
+    setComplete: complete => dispatch(setComplete(complete))
 })
 export default connect(null, mapDispatchToProps)(Field);
